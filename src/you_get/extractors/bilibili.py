@@ -276,7 +276,7 @@ class Bilibili(VideoExtractor):
             self.title = ""
 
             # construct playinfos
-            ep_id = initial_state['epInfo']['id']
+            ep_id = initial_state['epInfo']['ep_id']
             avid = initial_state['epInfo']['aid']
             cid = initial_state['epInfo']['cid']
             playinfos = []
