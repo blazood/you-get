@@ -273,7 +273,7 @@ class Bilibili(VideoExtractor):
                 log.w('This bangumi currently has %s videos. (use --playlist to download all videos.)' % epn)
 
             # set video title
-            self.title = initial_state['h1Title']
+            self.title = ""
 
             # construct playinfos
             ep_id = initial_state['epInfo']['id']
