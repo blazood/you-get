@@ -312,7 +312,7 @@ class Bilibili(VideoExtractor):
                         src.append(durl['url'])
                         size += durl['size']
                     self.streams[format_id] = {'container': container, 'quality': desc, 'size': size, 'src': src}
-
+                print(playinfo)
                 # DASH formats
                 if 'dash' in playinfo['result']:
                     print("start DASH")
