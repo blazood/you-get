@@ -314,8 +314,10 @@ class Bilibili(VideoExtractor):
                     self.streams[format_id] = {'container': container, 'quality': desc, 'size': size, 'src': src}
 
                 # DASH formats
+                print("start DASH")
                 if 'dash' in playinfo['result']:
                     for video in playinfo['result']['dash']['video']:
+                        print(video)
                         # playinfo['result']['quality'] does not reflect the correct quality of DASH stream
                         quality = self.height_to_quality(video['height'])  # convert height to quality code
                         s = self.stream_qualities[quality]
